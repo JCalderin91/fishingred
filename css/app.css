@@ -2,7 +2,10 @@
 [class^='col-']{
 	border: 1px solid red;
 }*/
-
+.container-fluid{
+	margin: 0 !important;
+	padding: 0 !important;
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -169,6 +172,19 @@ body{
 	font-size: 2rem;
 	padding: 0 5px;
 }
+#form button {
+	width: 100%;
+	text-align: center;
+	background-color: orange;
+	color: white;
+	transition: all .5s ease;
+}
+#form button:hover {
+	color: rgb(165, 75, 0);
+}
+#form button i{
+	font-size: 100%;
+}
 
 #footer #form{
 	background-color: #fff;
@@ -184,6 +200,7 @@ body{
 	width: 100%;
 	min-width: 100%;
 	padding: 5px;
+	margin: 3px;
 }
 #footer #form textarea{
 	min-height: 50px;
@@ -225,7 +242,6 @@ body{
 #footer #form .row{
 	margin-top: -30px;
 	padding: 10px;
-
 }
 a{
 	color: orange !important;
@@ -233,27 +249,27 @@ a{
 
 #copy{
 	background-color: #222;
-	text-align: center;
+	text-align: center !important;
 }
 #copy p{
 	color: #aaa;
 	margin-bottom: 0px !important;
 }
-i.fi-comments,
-i.fi-check,
-i.fi-star{
-	font-size: 6rem;
-	text-align: center;
-	display: block;
-	text-shadow: 0px 5px 10px rgba(0,0,0,.15);
+i.fa-chart-line,
+i.fa-trophy,
+i.fa-star{
+	font-size: 6rem !important;
+	text-align: center !important;
+	display: block !important;
+	text-shadow: 0px 5px 10px rgba(0,0,0,.15) !important;
 }
-i.fi-comments{
+i.fa-chart-line {
 	color: #e91e63;
 }
-i.fi-check{
+i.fa-trophy{
 	color: #3acbde;
 }
-i.fi-star{
+i.fa-star{
 	color: #fbbc05;
 }
 
@@ -267,12 +283,33 @@ i.fi-star{
 	background-repeat:no-repeat; /* Indicamos que no se repetira */
 	background-size:cover; /* Encajamos la imagen al 100% del ancho */
 	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
+}
 
+
+.empresa-banner{
+	width: 100%;
+	height: 300px;
+	background-image: url(http://fixner.com/wp-content/uploads/2015/10/Como-gestionar-una-empresa-de-servicios-1030x687.png);
+	background-repeat:no-repeat; /* Indicamos que no se repetira */
+	background-size:cover; /* Encajamos la imagen al 100% del ancho */
+	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
+}
+.empresa-banner .row{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#empresa h2{
+	color: orange;
+	font-size: 2.2rem;
+	text-shadow: 0 5px 10px black;
+}
+
+p{
+	text-align: justify;
 }
 
 /******************************/
 
-
-.space{
-	height: 1080px;
-}
