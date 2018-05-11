@@ -5,7 +5,7 @@
 	<title>Fishingred</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
@@ -15,16 +15,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4">
-					<h3>Fishingred <i class="fas fa-anchor"></i></h3>
+					<h3><i class="fas fa-anchor"></i> Fishingred</h3>
 				</div>
 				<div class="col-sm-8">
 					<ul id="menu">
-						<li><a href="#">Principal</a></li>
-						<li><a href="#">Empresa</a></li>
+						<li><a class="ancla" data-ancla="header" href="#">Principal</a></li>
+						<li><a class="ancla" data-ancla="empresa"  href="#">Empresa</a></li>
 						<li><a href="#">Servicios</a></li>
 						<li><a href="#">Clientes</a></li>
 						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contacto</a></li>
+						<li><a class="ancla" data-ancla="footer" href="#">Contacto</a></li>
 					</ul>
 				</div>
 			</div>
@@ -38,23 +38,23 @@
 	</header>
 
 	<div id="btn-mas">
-		<i class="fa-angle-down"></i>
+		<i class="fas fa-arrow-alt-circle-down "></i>
 	</div>
 
 	<div class="container" id="posHeader">
 		<div class="row">
 			<div class="col-sm-4">
-				<i class="fi-comments"></i>
+				<i class="fas fa-chart-line"></i>
 				<h3>Reliability</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nisi est, illo debitis et quos quasi tempore optio beatae quidem?</p>
 			</div>
 			<div class="col-sm-4">
-				<i class="fi-check"></i>
+				<i class="fas fa-trophy"></i>
 				<h3>Expertise</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nisi est, illo debitis et quos quasi tempore optio beatae quidem?</p>
 			</div>
 			<div class="col-sm-4">
-				<i id="star" class="fi-star"></i>
+				<i id="star" class="fas fa-star"></i>
 				<h3>Quality</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nisi est, illo debitis et quos quasi tempore optio beatae quidem?</p>
 			</div>
@@ -83,6 +83,24 @@
 				</div>
 			</div>
 		</div>
+		<br>
+	</div>
+	<div class="container-fluid">
+		<div id="empresa" class="empresa-banner">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>Nuestra empresa</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="container">
+		<div class="empresa">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius aspernatur quae blanditiis quidem ab enim reiciendis, ipsum asperiores perfer adipisicing elit. Vero eius aspernatur quae blanditiis quidem ab enim reiciendis, ipsum asperiores perferendis, pariatur tempore nobis repudiandae iste sunt veritatis architecto quasi odit minus quibusdam.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius aspernatur quae blanditiis quidem ab enim reiciendis, ipsum asperiores perferendis, pariatur tempore nobis repudiandae iste sunt veritatis architecto quasi odit minus quibusdam.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius aspernatur quae blanditiis quidem ab enim reiciendis, ipsum asperiores perferendis, pariatur tempore nobis repudiandae iste sunt veritatis architecto quasi odit minus quibusdam.</p>
+		</div>
 	</div>
 	<br>
 	<footer id="footer">
@@ -90,10 +108,10 @@
 			<div class="row">
 				<div class="contacto col-sm-6">
 					<h3>Ponte en contacto</h3>
-					<h5><i class="fi-marker"></i>Busca nustras oficinas en</h5>
+					<h5><i class="fas fa-map-marker-alt"></i>Busca nustras oficinas en</h5>
 					<p>Bld Mihail Kogalniceanu, nr. 8,7652 </p>
 					<p>Bucharest, Romania</p>
-					<h5><i class="fi-telephone"></i>Puedes llamarnos</h5>
+					<h5><i class="fas fa-phone "></i>Puedes llamarnos</h5>
 					<p>+40 762 321 762</p>
 					<p>Mon - Fri, 8:00-22:00</p>
 				</div>
@@ -116,7 +134,7 @@
 								<textarea name="mensaje" placeholder="Mensaje"></textarea>
 							</div>
 							<div class="col-sm-12">
-								<input class="btn" type="submit" value="ENVIAR MENSAJE">
+								<button class="btn" type="submit" >ENVIAR MENSAJE <i class="fas fa-location-arrow"></i></button>
 							</div>
 						</div>
 					</form>
@@ -128,11 +146,9 @@
 		<p>Powered by <a href="#">Lineight</a> 2018 | All rights reserved</p>
 	</div>
 
-	
 
 </body>
-	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-	<script src="js/app.js" ></script>
+	<script src="js/app.js"></script>
 </html>
