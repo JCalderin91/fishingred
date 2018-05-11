@@ -352,7 +352,22 @@ i.fa-chess{
     background-attachment: fixed;
     /* Establecemos una posicion fija para la imagen */
 }
-
+#footer .fab{
+	color: #fff;
+	transition: all .5s ease;
+}
+#footer .fab.fa-facebook:hover{
+	color: #4867aa !important;
+}
+#footer .fab.fa-twitter-square:hover{
+	color: #00aced !important;
+}
+#footer .fab.fa-instagram:hover{
+	color: #c34d8a !important;
+}
+#footer .fab.fa-whatsapp-square:hover{
+	color: #47c756 !important;
+}
 
 .empresa-banner {
     width: 100%;
