@@ -1,0 +1,426 @@
+/*rgb(255, 165, 0) Orange*
+[class^='col-']{
+	border: 1px solid red;
+}
+.row{
+	border: 1px solid blue;
+}*/
+
+.container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Slab', serif;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #eee;
+}
+
+#navBar {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 20;
+    transition: all .3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.sticky {
+    background-color: #000 !important;
+    border: none !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .4) !important;
+}
+
+#navBar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navBar li {
+    display: inline-block;
+    margin: 0;
+    padding: 15px;
+}
+
+#navBar li a {
+    text-decoration: none;
+    color: #fff !important;
+    transition: all .5s ease
+}
+
+#navBar li a:hover {
+    color: orange !important;
+}
+
+#menu {
+    margin: 0 !important;
+}
+
+#navBar li a {
+    color: #fff;
+}
+
+#navBar h3 {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-left: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#header img {
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+}
+
+#header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://www.esan.edu.pe/apuntes-empresariales/2016/06/01/ventasmarketing_principal.jpg);
+    background-repeat: no-repeat;
+    /* Indicamos que no se repetira */
+    background-size: cover;
+    /* Encajamos la imagen al 100% del ancho */
+    background-attachment: fixed;
+    /* Establecemos una posicion fija para la imagen */
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#header .titulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+#header .titulo img {
+    position: relative;
+}
+
+#header .titulo p {
+    text-align: center;
+    font-size: 1.2rem;
+    text-shadow: 0 2px 2px #000;
+}
+
+#btn-mas {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: jump 1s ease infinite;
+}
+#btn-mas a{
+    color: #fff !important;
+}
+
+@keyframes jump {
+    0% {
+        top: 90%;
+    }
+    50% {
+        top: 88%;
+    }
+    100% {
+        top: 90%;
+    }
+}
+
+#btn-mas i {
+    font-size: 2rem;
+    text-shadow: 0px -2px 5px rgba(0, 0, 0, .4);
+}
+
+
+#body img {
+    width: 100%;
+    height: 100%;
+}
+
+#body .box {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#footer h5 i {
+    font-size: 100%;
+}
+
+#footer {
+    padding: 20px 0;
+    background-color: #131627;
+    color: #fff;
+    padding: 20px;
+}
+
+#footer ul li {
+    list-style: none;
+}
+
+#footer li input {
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+}
+
+#footer li a {
+    width: 100%;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0 0 5px 5px;
+}
+
+#footer a {
+    position: relative;
+    transition: all .5s ease;
+}
+
+#footer i {
+    font-size: 2rem;
+    padding: 0 5px;
+}
+
+#form button {
+    width: 100%;
+    text-align: center;
+    background-color: orange;
+    color: white;
+    transition: all .5s ease;
+}
+
+#form button:hover {
+    color: rgb(165, 75, 0);
+}
+
+#form button i {
+    font-size: 100%;
+}
+
+#footer #form {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#footer #form textarea,
+#footer #form input {
+    transition: all .5s ease;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    width: 100%;
+    min-width: 100%;
+    padding: 5px;
+    margin: 3px;
+}
+
+#footer #form textarea {
+    min-height: 50px;
+    max-height: 100px;
+}
+
+#footer #form input:focus,
+#footer #form textarea:focus {
+    border-bottom: 1px solid rgba(255, 165, 0, .8);
+    background-color: #eee;
+}
+
+#footer #form h4 {
+    background-color: orange;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px;
+    top: -20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .4);
+    margin-bottom: 30px;
+}
+
+#footer .contacto {
+    text-shadow: 2px 2px 2px #000;
+}
+#footer  h2{
+	text-align: center;
+    color: rgb(255, 165, 0);
+    text-shadow: 1px 1px 3px #000;
+    font-weight: bold;
+    padding: 20px;
+
+}
+
+#footer .contacto h3 {
+    text-shadow: 1px 1px 3px #000;
+}
+
+#footer #form input.btn {
+    background-color: orange !important;
+    font-weight: bold;
+    color: #603e00;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+}
+
+#footer #form a {
+    margin-top: 15px;
+}
+
+#footer #form .row {
+    margin-top: -30px;
+    padding: 10px;
+}
+
+a {
+    color: orange !important;
+}
+
+#copy {
+    background-color: #222;
+    text-align: center !important;
+}
+#copy p {
+	padding: 20px;
+    color: #aaa;
+    margin-bottom: 0px !important;
+    text-align: center !important;
+}
+
+i.fa-chart-line,
+i.fa-trophy,
+i.fa-star,
+i.fa-chess {
+    font-size: 6rem !important;
+    text-align: center !important;
+    display: block !important;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, .15) !important;
+}
+
+i.fa-chart-line {
+    color: #e91e63;
+}
+
+i.fa-trophy {
+    color: #3acbde;
+}
+
+i.fa-star {
+    color: #fbbc05;
+}
+i.fa-chess{
+	color: #d5c2a6;
+}
+
+*::-moz-selection {
+    background-color: orange;
+    color: black;
+}
+
+#footer {
+    background-image: url(https://i.ytimg.com/vi/dGiUO62LG1g/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    /* Indicamos que no se repetira */
+    background-size: cover;
+    /* Encajamos la imagen al 100% del ancho */
+    background-attachment: fixed;
+    /* Establecemos una posicion fija para la imagen */
+}
+#footer .fab{
+	color: #fff;
+	transition: all .5s ease;
+}
+#footer .fab.fa-facebook:hover{
+	color: #4867aa !important;
+}
+#footer .fab.fa-twitter-square:hover{
+	color: #00aced !important;
+}
+#footer .fab.fa-instagram:hover{
+	color: #c34d8a !important;
+}
+#footer .fab.fa-whatsapp-square:hover{
+	color: #47c756 !important;
+}
+
+.empresa-banner {
+    width: 100%;
+    height: 300px;
+    background-image: url(http://fixner.com/wp-content/uploads/2015/10/Como-gestionar-una-empresa-de-servicios-1030x687.png);
+    background-repeat: no-repeat; /* Indicamos que no se repetira */
+    background-size: cover;/* Encajamos la imagen al 100% del ancho */
+    background-attachment: fixed;/* Establecemos una posicion fija para la imagen */
+}
+
+.empresa-banner .row {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#servicios .subtitulo{
+    background-image: url(http://www.quimasa.com/wp-content/uploads/2018/03/servicios.jpg);
+}
+#clientes .subtitulo{
+    background-image: url(https://cf-cdn.gananci.com/wp-content/uploads/2017/04/servicio-al-cliente.jpg);
+}
+.subtitulo {
+	position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat; /* Indicamos que no se repetira */
+    background-size: cover;/* Encajamos la imagen al 100% del ancho */
+    background-attachment: fixed;/* Establecemos una posicion fija para la imagen */
+}
+.subtitulo h2{
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+    color: orange;
+    font-size: 2.5rem;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .6);
+}
+
+p {
+    text-align: justify;
+}
+
+#btn-arriba{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 2.5rem;
+	color: orange;
+}
+
+/******************************/
