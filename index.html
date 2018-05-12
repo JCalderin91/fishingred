@@ -11,42 +11,59 @@
 </head>
 <body>
 
-	<div id="navBar" class="container-fluid sticky">
+<div id="nav" class="container-fluid">
+	<nav id="navbar" class="navbar navbar-expand-md bg-dark navbar-dark fixed-top scrollOn">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<h3>Fishingred</h3>
-				</div>
-				<div class="col-md-8">
-					<ul id="menu">
-						<!-- <li><a class="ancla" data-ancla="header" href="#">Principal</a></li> -->
-						<li><a class="ancla" data-ancla="empresa"  href="#">Empresa</a></li>
-						<li><a class="ancla" data-ancla="servicios" href="#">Servicios</a></li>
-						<li><a class="ancla" data-ancla="clientes" href="#">Clientes</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a class="ancla" data-ancla="footer" href="#">Contacto</a></li>
-					</ul>
-				</div>
-			</div>
+		
+		  <!-- Brand -->
+		<h3><a class="navbar-brand" href="#">Fishingred</a></h3>	  
+
+		<!-- Toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		  <!-- Navbar links -->
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a data-ancla="empresa" class="ancla nav-link" href="#">Empresa</a>
+			</li>
+			<li class="nav-item">
+				<a data-ancla="servicios" class="ancla nav-link" href="#">Servicios</a>
+			</li>
+			<li class="nav-item">
+				<a data-ancla="clientes" class="ancla nav-link" href="#">Clientes</a>
+			</li>
+			<li class="nav-item">
+				<a data-ancla="blog" class="ancla nav-link" href="#">Blog</a>
+			</li>
+			<li class="nav-item">
+				<a data-ancla="footer" class="ancla nav-link" href="#">Contacto</a>
+			</li>
+		</ul>
 		</div>
-	</div>
+		</div>
+	</nav> 
+</div>
+
 	<header id="header">
-		<div class="row titulo">
-			<div class="col-sm-12">
+		<div class="cont-header">
+			<div class="cont-titulo">
 				<img src="img/logo-sin-fondo.png">
 			</div>
-			<div class="col-sm-12">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit.</p>
+			<div class="cont-subtitulo">
+				<p>Lorem ipsum dolor sit amet, consectetur.</p>
 			</div>
 		</div>
+		
 	</header>
 
 	<div id="btn-mas">
 		<a class="ancla" data-ancla="empresa" href="#"><i class="fas fa-arrow-alt-circle-down "></i></a>
 	</div>
+
 	<br>
-
-
 	<br>
 	<div id="empresa" class="container">
 		<h2>Nuestra empresa</h2>
@@ -107,7 +124,7 @@
     <li data-target="#demo" data-slide-to="2"></li>
   </ul>
 <!-- The slideshow -->
-<div class="carousel-inner">
+<div id="carousel" class="carousel-inner">
 	<div class="carousel-item active">
 		<div class="row">
 			<div class="col-lg-6">
@@ -158,12 +175,11 @@
 
 	<br>
 	<footer id="footer">
-		<br>
-			<h2>Para mayor información</h2>
+		<h2>Para mayor información</h2>
 		<br>
 		<div class="container">
 			<div class="row">
-				<div class="contacto col-lg-6">
+				<div class="contacto col-sm-6">
 					<h3>Ponte en contacto</h3>
 					<h5><i class="fas fa-map-marker-alt"></i>Busca nustras oficinas en</h5>
 					<p>Bld Mihail Kogalniceanu, nr. 8,7652 </p>
@@ -177,7 +193,7 @@
 					<a href="#"><i class="fab fa-instagram"></i></a>
 					<a href="#"><i class="fab fa-whatsapp-square  "></i></a>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-sm-6">
 					<form action="" id="form" method="POST">
 						<div class="row">
 							<div class="col-lg-12">
@@ -206,7 +222,14 @@
 	</footer>
 
 	<div id="copy">
-		<p>Desarrollado por <a href="#">Fishingred</a> 2018 | Todos los derechos reservados</p>
+		<div class="row">
+			<div class="col-12 col-sm-6">
+				<p><a href="#">Fishingred &copy; 2018</a></p>
+			</div>
+			<div class="col-12 col-sm-6">
+				<p>Todos los derechos reservados. </p>
+			</div>
+		</div>
 	</div>
 
 	<div id="btn-arriba"><a href="#"><i class="fas fa-arrow-circle-up"></i></a></div>
