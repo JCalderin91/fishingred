@@ -1,4 +1,5 @@
-/*rgb(255, 165, 0) Orange*
+/*rgb(255, 165, 0) Orange**/
+/*
 [class^='col-']{
 	border: 1px solid red;
 }
@@ -36,99 +37,62 @@ p {
 body {
     background-color: #eee;
 }
-
-#navBar {
-    position: fixed;
-    top: 0;
-    background-color: rgba(0, 0, 0, .6);
-    z-index: 20;
-    transition: all .3s ease;
-    border-bottom: 1px solid rgba(255, 255, 255, .5);
+.scrollOff{
+	background-color: rgb(0,0,0) !important;
+	box-shadow: 0 5px 10px rgba(0,0,0,.5);
+}
+.scrollOn{
+	background-color: rgba(0,0,0,.6) !important;
+	border-bottom: 1px solid #fff;
+}
+#nav ul{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+#nav h3{
+	font-weight: bold;
+}
+#nav li a{
+	text-align: center;
+	transition: all .5s ease;
+}
+#nav ul li a:hover{
+	color: #fff !important;
 }
 
-.sticky {
-    background-color: #000 !important;
-    border: none !important;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .4) !important;
-}
-
-#navBar ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-#navBar li {
-    display: inline-block;
-    margin: 0;
-    padding: 15px;
-}
-
-#navBar li a {
-    text-decoration: none;
-    color: #fff !important;
-    transition: all .5s ease
-}
-
-#navBar li a:hover {
-    color: orange !important;
-}
-
-#menu {
-    margin: 0 !important;
-}
-
-#navBar li a {
-    color: #fff;
-}
-
-#navBar h3 {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    padding-left: 15px;
-    color: #fff;
-    font-weight: bold;
-}
-
-#header img {
-    position: absolute;
-    top: 0;
-    z-index: -10;
-    height: 100%;
-    width: 100%;
-}
+/****************************************************************************************************/
 
 #header {
     height: 100vh;
     width: 100vw;
     background-image: url(https://www.esan.edu.pe/apuntes-empresariales/2016/06/01/ventasmarketing_principal.jpg);
-    background-repeat: no-repeat;
-    /* Indicamos que no se repetira */
-    background-size: cover;
-    /* Encajamos la imagen al 100% del ancho */
-    background-attachment: fixed;
-    /* Establecemos una posicion fija para la imagen */
-    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;    /* Indicamos que no se repetira */
+    background-size: cover;    /* Encajamos la imagen al 100% del ancho */
+    background-attachment: fixed;    /* Establecemos una posicion fija para la imagen */
+
 }
 
-#header .titulo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
+#header .cont-header{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 500px;
+}
+#header img{
+	position: relative;
+	width: 100%;
+}
+#header .cont-subtitulo p{
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px 3px rgba(0,0,0,.4);
+	font-size: 2rem;
 }
 
-#header .titulo img {
-    position: relative;
-}
+/****************************************************************************************************/
 
-#header .titulo p {
-    text-align: center;
-    font-size: 1.2rem;
-    text-shadow: 0 2px 2px #000;
-}
 
 #btn-mas {
     position: absolute;
@@ -355,6 +319,7 @@ i.fa-chess{
 #footer .fab{
 	color: #fff;
 	transition: all .5s ease;
+	padding: 20px 10px;
 }
 #footer .fab.fa-facebook:hover{
 	color: #4867aa !important;
@@ -370,7 +335,7 @@ i.fa-chess{
 }
 
 .empresa-banner {
-    width: 100%;
+    width: 100vw;
     height: 300px;
     background-image: url(http://fixner.com/wp-content/uploads/2015/10/Como-gestionar-una-empresa-de-servicios-1030x687.png);
     background-repeat: no-repeat; /* Indicamos que no se repetira */
@@ -395,7 +360,7 @@ i.fa-chess{
 .subtitulo {
 	position: relative;
     margin-bottom: 30px;
-    width: 100%;
+    width: 100vw;
     height: 200px;
     background-repeat: no-repeat; /* Indicamos que no se repetira */
     background-size: cover;/* Encajamos la imagen al 100% del ancho */
@@ -423,4 +388,33 @@ p {
 	color: orange;
 }
 
+#carousel img{
+
+	width: 100%;
+}
 /******************************/
+
+@media (max-width: 576px){
+	#header .cont-header{
+		width: 100vw;
+	}
+	#header .cont-subtitulo{
+		display: none;
+	}
+	.subtitulo h2{
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	#footer,
+	#footer p,
+	#servicios h3{
+		text-align: center;
+	}
+
+	#copy p{
+		padding: 10px;
+		margin: 0;
+	}
+
+}
